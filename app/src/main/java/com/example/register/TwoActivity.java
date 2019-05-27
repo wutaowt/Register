@@ -9,6 +9,6 @@ public class TwoActivity extends AppCompatActivity {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.two);
-        System.out.println("hellow");
+        //System.out.println("hellow");
     }
 }
