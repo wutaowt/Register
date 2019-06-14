@@ -4,94 +4,92 @@
     android:layout_height="match_parent">
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="45dp"
+        android:layout_height="48dp"
         android:orientation="horizontal"
         android:layout_gravity="bottom"
-        android:background="@color/colorHuise"
-
-        >
-
+        android:background="@color/huise">
+        //四个子布局
         <LinearLayout
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:gravity="center"
-
-            android:orientation="vertical">
-
+            android:layout_gravity="bottom"
+            android:orientation="vertical"
+            android:id="@+id/tab_item_home">
             <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:src="@drawable/ic_red_home" />
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/ic_r_home"
+                android:id="@+id/tab_item_home_btn"/>
             <TextView
-                android:layout_height="wrap_content"
                 android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 android:text="首页"
-
-                />
-
-
+                android:textColor="@color/red"
+                android:textSize="12sp"/>
         </LinearLayout>
         <LinearLayout
             android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:gravity="center"
-
             android:layout_weight="1"
+            android:gravity="center"
+            android:layout_gravity="bottom"
             android:orientation="vertical"
-            >
+            android:id="@+id/tab_item_category">
             <ImageView
-                android:layout_height="wrap_content"
                 android:layout_width="wrap_content"
-                android:src="@drawable/ic_fl"
-                /><TextView
-            android:layout_height="wrap_content"
-            android:layout_width="wrap_content"
-            android:text="分类"
-
-            />
-
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_w_tab2"
+                android:id="@+id/tab_item_category_btn"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="分类"
+                android:textColor="@color/white"
+                android:textSize="12sp"/>
         </LinearLayout>
         <LinearLayout
             android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:gravity="center"
-
             android:layout_weight="1"
+            android:gravity="center"
+            android:layout_gravity="bottom"
             android:orientation="vertical"
-            >
+            android:id="@+id/tab_item_cart">
             <ImageView
-                android:layout_height="wrap_content"
                 android:layout_width="wrap_content"
-                android:src="@drawable/ic_car"
-                /><TextView
-            android:layout_height="wrap_content"
-            android:layout_width="wrap_content"
-            android:text="购物车"
-
-            />
-
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_w_cart"
+                android:id="@+id/tab_item_cart_btn"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="购物"
+                android:textColor="@color/white"
+                android:textSize="12sp"/>
         </LinearLayout>
         <LinearLayout
             android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:gravity="center"
-
             android:layout_weight="1"
+            android:gravity="center"
+            android:layout_gravity="bottom"
             android:orientation="vertical"
-            >
+            android:id="@+id/tab_item_personal">
             <ImageView
-                android:layout_height="wrap_content"
                 android:layout_width="wrap_content"
-                android:src="@drawable/ic_my"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_w_mind"
+                android:id="@+id/tab_item_personal_btn"
                 />
             <TextView
-                android:layout_height="wrap_content"
                 android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 android:text="我的"
-
-                />
-
+                android:textColor="@color/white"
+                android:textSize="12sp"/>
         </LinearLayout>
+
     </LinearLayout>
 </LinearLayout>

@@ -4,12 +4,18 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
+import android.widget.ArrayAdapter;
 import android.widget.Button;
+import android.widget.ListView;
 import android.widget.Toast;
+
+import java.util.ArrayList;
+import java.util.List;
 
 public class MainActivity extends AppCompatActivity {
 
-
+    private ListView listView;
+    private List<String> list = new ArrayList<>();
     private Button login_btn_login;
     private Button login_btn_register;
 
@@ -17,6 +23,16 @@ public class MainActivity extends AppCompatActivity {
             protected void onCreate(Bundle savedInstanceState) {
                 super.onCreate(savedInstanceState);
                  setContentView(R.layout.activity_main);
+                 listView=(ListView)findViewById(R.id.listview) ;
+            for (int i=0;i<10;i++){
+                list.add(i+"");//通过for循环将 数据写入list
+            }
+                //创建一个适配器
+            ArrayAdapter arrayAdapter= new ArrayAdapter(MainActivity.this,
+                    android.R.layout.simple_list_item_1,list);
+            listView.setAdapter(arrayAdapter);
+            //通知适配器刷新
+            arrayAdapter.notifyDataSetChanged();
 
 
                  login_btn_login = (Button)findViewById(R.id.login_btn_login);
@@ -37,7 +53,7 @@ public class MainActivity extends AppCompatActivity {
 
                     case  R.id.login_btn_login:
                         Toast.makeText(MainActivity.this,"登录成功！",Toast.LENGTH_LONG).show();
-                        Intent intlogin_btn_loginent = new Intent(MainActivity.this,TwoActivity.class);//页面的跳转
+                        Intent intlogin_btn_loginent = new Intent(MainActivity.this,NavigationFragment.class);//页面的跳转
                         startActivity(intlogin_btn_loginent);
                         finish();
 

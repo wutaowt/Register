@@ -4,4 +4,7 @@
     <color name="colorPrimaryDark">#00574B</color>
     <color name="colorAccent">#D81B60</color>
     <color name="colorHuise">#D1EEEE</color>
+    <color name="white">#FFFFFF</color>
+    <color name="huise">#545454</color>
+    <color name="red">#FF00</color>
 </resources>
