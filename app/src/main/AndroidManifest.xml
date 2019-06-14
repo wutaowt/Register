@@ -23,6 +23,7 @@
             </intent-filter>
         </activity>
         <activity android:name=".Register"/>
+        <activity android:name=".Butter"/>
     </application>
 
 </manifest>
