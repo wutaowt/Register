@@ -1,7 +1,8 @@
 package com.example.register;
 
 import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 public class Register extends AppCompatActivity {
     @Override
@@ -10,3 +11,4 @@ public class Register extends AppCompatActivity {
         setContentView(R.layout.register);
     }
 }
+

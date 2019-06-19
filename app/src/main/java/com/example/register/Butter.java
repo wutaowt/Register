@@ -1,10 +1,11 @@
 package com.example.register;
 
 import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 import butterknife.BindView;
 import butterknife.OnClick;
@@ -21,7 +22,7 @@ public class Butter extends AppCompatActivity {
         Toast.makeText(Butter.this,"Hellow",Toast.LENGTH_LONG);
 
     }
-    void submitListener(){}
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
 
